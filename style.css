@@ -199,7 +199,6 @@ section {
     object-fit: contain;
 }
 
-/* Content */
 
 .main-container .content {
     color: black;
@@ -224,7 +223,7 @@ section {
     text-shadow: 0 0 10px rgba(109, 67, 0, 0.3);
 }
 
-/* Typewriter */
+
 
 .content .typewriter {
     font-weight: 600;
@@ -333,10 +332,7 @@ section {
         content: 'Front-End Developer';
     }
 
-    67%,
-    100% {
-        content: 'UI/UX Designer & Front-End Developer';
-    }
+
 }
 
 @media (max-width: 900px) {
