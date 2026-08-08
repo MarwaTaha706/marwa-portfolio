@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <title>Marwa Taha | UI/UX Designer & Front-End Developer</title>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <span>Marwa Taha</span>
+                </div>
+                <div class="links">
+                    <div class="link"><a href="#">Home</a></div>
+                    <div class="link"><a href="#">About</a></div>
+                    <div class="link"><a href="#">Skills</a></div>
+                    <div class="link"><a href="#">Services</a></div>
+                    <div class="link"><a href="#">Blogs</a></div>
+                    <div class="link contact-btn"><a href="#">Contacts Us</a></div>
+                </div>
+                <i class="fa-solid fa-bars hamburger"></i>
+            </div>
+            <div class="dropdown">
+                <div class="links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Skills</a>
+                    <a href="#">Services</a>
+                    <a href="#">Blogs</a>
+                    <a href="#">Contacts Us</a>
+                    <i class="fa-solid fa-xmark cancel"></i>
+                </div>
+            </div>
+            </nav>
+            <section id="home">
+                <div class="main-container">
+                    <div class="image">
+                        <img src="Group 1.png" alt="Marwa Taha">
+                    </div>
+                    <div class="content">
+                        <p class="hello">Hello, I'm</p> <h1> Marwa <span>Taha</span> </h1>
+                        <div class="typewriter"> I'm a <span></span> </div>
+                        <p class="description"> I'm a UI/UX Designer and Front-End Developer passionate about creating intuitive, user-friendly digital experiences. I design clean, modern interfaces based on user needs and UX principles, then transform my designs into responsive, functional websites. I focus on creating seamless experiences across all devices while combining creativity, usability, and attention to detail. </p>
+                        <div class="social-links">
+                            <a href="#" aria-label="GitHub"> <i class="fa-brands fa-github"></i> </a>
+                            <a href="#" aria-label="Facebook"> <i class="fa-brands fa-facebook"></i> </a>
+                            <a href="#" aria-label="LinkedIn"> <i class="fa-brands fa-linkedin"></i> </a>
+                            <a href="#" aria-label="Twitter"> <i class="fa-brands fa-x-twitter"></i> </a>
+                        </div>
+                        <div class="btn">
+                            <button>Download CV</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <script> const hamburger = document.querySelector(".hamburger"); const cancel = document.querySelector(".cancel"); const dropdown = document.querySelector(".dropdown"); hamburger.addEventListener("click", () => { dropdown.style.transform = "translateY(0)"; }); cancel.addEventListener("click", () => { dropdown.style.transform = "translateY(-550px)"; }); const mobileLinks = document.querySelectorAll(".dropdown a"); mobileLinks.forEach(link => { link.addEventListener("click", () => { dropdown.style.transform = "translateY(-550px)"; }); }); </script>
+    </body>
+</html>
